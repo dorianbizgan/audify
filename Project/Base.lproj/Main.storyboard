@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q8H-4C-Pqg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="fh0-dE-hzK">
+            <objects>
+                <viewController id="ovw-kC-duk" customClass="SettingsViewController" customModule="Audify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XAA-bs-hR7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DkW-iF-aUn">
+                                <rect key="frame" x="124" y="223" width="245" height="32"/>
+                                <segments>
+                                    <segment title="American"/>
+                                    <segment title="British"/>
+                                    <segment title="Australian"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gkm-wM-e0k">
+                                <rect key="frame" x="40" y="226" width="57" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="4NW-6L-Btq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdA-Q1-yLh">
+                                <rect key="frame" x="40" y="327" width="61" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="y1A-fZ-Ndf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02R-qd-awo">
+                                <rect key="frame" x="35" y="123" width="137.5" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Y03-yo-GNe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="suR-jy-M6u">
+                                <rect key="frame" x="242" y="324" width="127" height="32"/>
+                                <segments>
+                                    <segment title="Male"/>
+                                    <segment title="Female"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.53614324331283569" green="0.87245434522628784" blue="0.91268020868301392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dWf-zW-I4g">
+                                <rect key="frame" x="140" y="430" width="229" height="32"/>
+                                <segments>
+                                    <segment title=".25x"/>
+                                    <segment title=".5x"/>
+                                    <segment title="1x"/>
+                                    <segment title="1.5x"/>
+                                    <segment title="2x"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.84874075650000003" green="0.39142021539999999" blue="0.28595137599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLe-aO-gaD">
+                                <rect key="frame" x="40" y="433" width="52.5" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="MKq-PY-EP1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Gkm-wM-e0k" firstAttribute="leading" secondItem="ZDb-Is-cR5" secondAttribute="leading" constant="40" id="4eg-dO-faZ"/>
+                            <constraint firstItem="YdA-Q1-yLh" firstAttribute="leading" secondItem="Gkm-wM-e0k" secondAttribute="leading" id="C70-ZZ-ZXw"/>
+                            <constraint firstItem="ZDb-Is-cR5" firstAttribute="trailing" secondItem="dWf-zW-I4g" secondAttribute="trailing" constant="45" id="DCA-mL-a8c"/>
+                            <constraint firstItem="DkW-iF-aUn" firstAttribute="leading" secondItem="Gkm-wM-e0k" secondAttribute="trailing" constant="27" id="Mbh-IH-PEO"/>
+                            <constraint firstItem="suR-jy-M6u" firstAttribute="centerY" secondItem="YdA-Q1-yLh" secondAttribute="centerY" id="NaE-DD-znj"/>
+                            <constraint firstItem="dWf-zW-I4g" firstAttribute="top" secondItem="suR-jy-M6u" secondAttribute="bottom" constant="75" id="Qq4-2r-X7A"/>
+                            <constraint firstItem="suR-jy-M6u" firstAttribute="top" secondItem="DkW-iF-aUn" secondAttribute="bottom" constant="70" id="R20-0t-lzW"/>
+                            <constraint firstItem="DkW-iF-aUn" firstAttribute="centerY" secondItem="Gkm-wM-e0k" secondAttribute="centerY" id="avF-kF-c7F"/>
+                            <constraint firstItem="02R-qd-awo" firstAttribute="leading" secondItem="ZDb-Is-cR5" secondAttribute="leading" constant="35" id="cwl-Dy-SSi"/>
+                            <constraint firstItem="02R-qd-awo" firstAttribute="top" secondItem="ZDb-Is-cR5" secondAttribute="top" constant="35" id="dnU-E1-3rQ"/>
+                            <constraint firstItem="YdA-Q1-yLh" firstAttribute="leading" secondItem="ZDb-Is-cR5" secondAttribute="leading" constant="40" id="m3g-pd-82W"/>
+                            <constraint firstItem="suR-jy-M6u" firstAttribute="trailing" secondItem="DkW-iF-aUn" secondAttribute="trailing" id="p4X-Pd-qqd"/>
+                            <constraint firstItem="MLe-aO-gaD" firstAttribute="leading" secondItem="ZDb-Is-cR5" secondAttribute="leading" constant="40" id="ri0-pF-WQN"/>
+                            <constraint firstItem="DkW-iF-aUn" firstAttribute="top" secondItem="02R-qd-awo" secondAttribute="bottom" constant="55" id="yrV-nc-szl"/>
+                            <constraint firstItem="dWf-zW-I4g" firstAttribute="centerY" secondItem="MLe-aO-gaD" secondAttribute="centerY" id="zjU-Tb-nje"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZDb-Is-cR5"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="tGF-u8-uPi">
+                        <barButtonItem key="backBarButtonItem" title="Documents" id="RQq-Gr-A7S"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="speedControl" destination="dWf-zW-I4g" id="PeB-jg-IXw"/>
+                        <outlet property="voiceCategoryControl" destination="DkW-iF-aUn" id="j8D-ru-6Ht"/>
+                        <outlet property="voiceGenderControl" destination="suR-jy-M6u" id="xmK-0y-vEv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ShM-my-BRd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2769.5652173913045" y="-694.41964285714278"/>
+        </scene>
+        <!--Document View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DocumentViewController" customModule="Audify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIq-ea-3km">
+                                <rect key="frame" x="57" y="787" width="300" height="55"/>
+                                <color key="backgroundColor" red="0.33333696787273026" green="0.75689075404873096" blue="0.73562279480972115" alpha="0.21254280821917809" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="7yb-KC-ntz"/>
+                                    <constraint firstAttribute="height" constant="55" id="NPW-64-ydE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <inset key="contentEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="1"/>
+                                <state key="normal" title="Speak">
+                                    <color key="titleColor" red="0.32004565629999998" green="0.71697562079999999" blue="0.69468709529999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressSpeakButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jt0-lU-86N"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="always" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="IdB-FY-ZTt">
+                                <rect key="frame" x="20" y="255" width="374" height="427"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.53614324331283569" green="0.87245434522628784" blue="0.91268020868301392" alpha="0.29337007705479451" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.32004565629999998" green="0.71697562079999999" blue="0.69468709529999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="playpause" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZKA-g9-rFA">
+                                <rect key="frame" x="150" y="806.5" width="24.5" height="16"/>
+                                <color key="tintColor" red="0.32004565629999998" green="0.71697562079999999" blue="0.69468709529999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWL-es-ziw">
+                                <rect key="frame" x="57" y="707" width="300" height="55"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="XzX-Hu-cCT"/>
+                                    <constraint firstAttribute="width" constant="300" id="ryg-sK-6UZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <state key="normal" title="Scan Document">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTakePicture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qwm-bi-K2g"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nN1-U9-ivU">
+                                <rect key="frame" x="20" y="109" width="374" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qXo-yR-wsL">
+                                        <rect key="frame" x="4" y="2" width="366" height="0.0"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="ATe-B7-BcM"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="mIc-MN-Jqq"/>
+                            </scrollView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R5f-rU-EEo">
+                                <rect key="frame" x="132" y="172" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Scan a Document or Type Text" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JpY-jN-a5N">
+                                <rect key="frame" x="57" y="142" width="300" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZKA-g9-rFA" firstAttribute="centerY" secondItem="ZIq-ea-3km" secondAttribute="centerY" id="1JV-jc-olq"/>
+                            <constraint firstItem="ZIq-ea-3km" firstAttribute="top" secondItem="dWL-es-ziw" secondAttribute="bottom" constant="25" id="27q-K7-g5v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZIq-ea-3km" secondAttribute="bottom" constant="20" id="MFl-hW-eun"/>
+                            <constraint firstItem="ZKA-g9-rFA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="dfy-98-fBa"/>
+                            <constraint firstItem="dWL-es-ziw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ky0-6y-Yde"/>
+                            <constraint firstItem="ZIq-ea-3km" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mUD-yn-wK8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aMc-kb-0M4"/>
+                    <connections>
+                        <outlet property="audioPlayPauseIcon" destination="ZKA-g9-rFA" id="Jxy-Fa-fLp"/>
+                        <outlet property="imageView" destination="qXo-yR-wsL" id="lRP-ia-8f6"/>
+                        <outlet property="scanDocumentButton" destination="dWL-es-ziw" id="tuG-d5-D6U"/>
+                        <outlet property="scrollView" destination="nN1-U9-ivU" id="Wev-h6-YC5"/>
+                        <outlet property="speakButton" destination="ZIq-ea-3km" id="R2x-eT-n1d"/>
+                        <outlet property="textView" destination="IdB-FY-ZTt" id="Crc-38-dyw"/>
+                        <outlet property="titleLabel" destination="JpY-jN-a5N" id="LJQ-Nw-bWq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2771.0144927536235" y="-1.3392857142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mx0-ye-9eP">
+            <objects>
+                <viewController id="raS-Aj-bJF" customClass="ViewController" customModule="Audify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Wx-F7-TvY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="QVM-Na-Sgw">
+                                <rect key="frame" x="20" y="207" width="374" height="655"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="separatorColor" red="0.32004565629999998" green="0.71697562079999999" blue="0.69468709529999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" reuseIdentifier="TextCell" textLabel="Iwl-Ut-8Mv" detailTextLabel="Edj-oo-YRX" rowHeight="85" style="IBUITableViewCellStyleValue1" id="EF5-Xy-oWA">
+                                        <rect key="frame" x="0.0" y="55.5" width="374" height="85"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EF5-Xy-oWA" id="VXK-XM-mGM">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="85"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Iwl-Ut-8Mv">
+                                                    <rect key="frame" x="20" y="33" width="42.5" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="Edj-oo-YRX">
+                                                    <rect key="frame" x="314.5" y="38" width="39.5" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="DocumentSegueIdentifier" id="sGv-OX-Mm6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Documents" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeS-Y7-nc5">
+                                <rect key="frame" x="35" y="123" width="188" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="xPi-fN-Wdr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1c-lq-kwY">
+                                <rect key="frame" x="57" y="807" width="300" height="55"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="AaQ-UF-Vtp"/>
+                                    <constraint firstAttribute="width" constant="300" id="GM4-41-3E0"/>
+                                </constraints>
+                                <state key="normal" title="New Scan">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="NewDocumentSegueIdentifier" id="s6N-p3-pye"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="w1c-lq-kwY" firstAttribute="bottom" secondItem="Ojx-91-G6Y" secondAttribute="bottom" id="K73-5W-nY8"/>
+                            <constraint firstItem="w1c-lq-kwY" firstAttribute="centerX" secondItem="0Wx-F7-TvY" secondAttribute="centerX" id="U3L-Jy-qnc"/>
+                            <constraint firstItem="KeS-Y7-nc5" firstAttribute="leading" secondItem="Ojx-91-G6Y" secondAttribute="leading" constant="35" id="eMS-EG-MEc"/>
+                            <constraint firstItem="KeS-Y7-nc5" firstAttribute="top" secondItem="Ojx-91-G6Y" secondAttribute="top" constant="35" id="fDY-kA-y3M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ojx-91-G6Y"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="xnt-wf-hAV">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="gear" catalog="system" id="3Z8-wk-vX7">
+                            <color key="tintColor" red="0.32004565629999998" green="0.71697562079999999" blue="0.69468709529999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="ovw-kC-duk" kind="show" identifier="SettingsSegueIdentifier" id="Yxb-1N-g4l"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="newScanButton" destination="w1c-lq-kwY" id="SRG-iA-YFI"/>
+                        <outlet property="tableView" destination="QVM-Na-Sgw" id="Fdq-RP-7iX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kUq-5C-3jL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689.8550724637682" y="-138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nXP-tQ-no3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q8H-4C-Pqg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jRd-nW-CHJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="raS-Aj-bJF" kind="relationship" relationship="rootViewController" id="V9g-aC-LxM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aWE-Ja-seL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="779.71014492753625" y="-138.61607142857142"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sGv-OX-Mm6"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="playpause" catalog="system" width="128" height="83"/>
+    </resources>
+</document>
